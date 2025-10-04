@@ -18,7 +18,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.devikiran.newsy.HiltTestRunner"
     }
 
     buildTypes {
@@ -40,12 +40,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-//
-//    testOptions {
-//        unitTests {
-//            isIncludeAndroidResources = true
-//        }
-//    }
+
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
 
     kotlin {
         compilerOptions {
